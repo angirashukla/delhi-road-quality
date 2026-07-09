@@ -1,0 +1,212 @@
+sno,road,location,dates,frequency
+1,Africa Avenue Road,Both carriageway Madhav Rao Schindia Marg,01.09.2021,1
+2,Akbar Road,"C-Hexagon, Akbar Road",28.07.2021,1
+3,Anuvrat Marg,Lado Sarai towards City Hospital,13.07.2021,1
+4,Anuvrat Marg,Near 100 Foota Road,01.09.2021,1
+5,Ashok Vihar Road,Near Bartan Market towards Ashok Vihar,11.09.2021,1
+6,Ashoka Road,Buta Singh Roundabout,31.08.2021,1
+7,Ashoka Road,Gurudwara Bangla Sahib Bus Stand,08.08.2021,1
+8,Ashoka Road,Near C-Hexagon,11.09.2021,1
+9,Astha Kunj Road,Near EROS Mall,11.09.2021,1
+10,Aurobindo Marg,AIIMS towards Barapulla Flyover,29.07.2021,1
+11,Aurobindo Marg,IIT towards Mother International School,13.07.2021 31.08.2021,2
+12,Aurobindo Marg,INA Towards AIIMS Underpass,29.07.2021 21.08.2021 11.09.2021,3
+13,Aurobindo Marg,Near Adhchini towards MMTC,31.08.2021,1
+14,Aurobindo Marg,Near Adhchini Village,11.09.2021,1
+15,Aurobindo Marg,Near IIT / Adhchini Redlight,13.07.2021 19.07.2021 21.08.2021 11.09.2021,4
+16,Aurobindo Marg,Near Malviya Nagar Metro Station,11.09.2021,1
+17,Aurobindo Marg,PTS Malviya Nagar Redlight,08.08.2021,1
+18,Aurobindo Marg,PTS towards Adhchini,13.07.2021,1
+19,Banda Bahadur Marg,Near Batra Cinema,14.07.2021,1
+20,Bawana Road,Near Bawana Village,11.09.2021,1
+21,Bhairon Marg,Near Bhairon Mandir,11.09.2021,1
+22,Boulevard Road,Infront of Tis Hazari Court,11.09.2021,1
+23,Boulevard Road,Infront of Tis Hazari Metro Station,01.08.2021 01.09.2021,2
+24,BSZ Marg,ITO Chowk,21.08.2021,1
+25,Choudhary Fateh Singh Marg,Near P.S. Timarpur (both carriageway) / Wazirabad Road to Mall Road,29.07.2021 01.08.2021,2
+26,Dabri Flyover,On the loop of the flyover coming from Dabri side,13.07.2021,1
+27,DDU Marg (Deen Dayal Upadhyay Marg),W-Point,31.08.2021,1
+28,Dr. Bhim Rao Ambedkar Road,"Bhim Gali, Malkaganj",01.08.2021 01.09.2021,2
+29,Drain Road (Dabri-Dwarka),Drain Road at various locations between Power House and Dabri roundabout,13.07.2021,1
+30,Dwarka Link Road,Dwarka Underpass,13.07.2021 19.07.2021 11.09.2021,3
+31,Dwarka Road,Hanuman Mandir near Palam flyover / Towards Palam flyover from IOC Sadar Bazar,13.07.2021 19.07.2021 31.08.2021 01.09.2021 11.09.2021,5
+32,Dwarka Road,Kirbi Place,19.07.2021,1
+33,Dwarka Road,Road No. 224 & 210 Near Jal Board Booster pump,01.09.2021,1
+34,Dwarka Road,"Sector-1, Dwarka Slip Road",11.09.2021,1
+35,Girdhari Lal Goswami Marg,--,21.08.2021,1
+36,Girdhari Lal Goswami Marg,Near Post Office Naraina,11.09.2021,1
+37,GT Road / Old GT Road,Between Dharampura and Iron Bridge / near Iron Bridge,03.07.2021 14.07.2021 19.07.2021 29.07.2021 01.08.2021,5
+38,GT Road / Old GT Road,Dharampura Seelampur,19.07.2021 28.07.2021,2
+39,GT Road / Old GT Road,Near Seelampur Flyover (Shastri Park to Shahdara carriageway) / On the foot of Seelampur Flyover (ISBT to Apsara Border carriageway),03.07.2021 19.07.2021 28.07.2021 30.07.2021 01.08.2021,5
+40,GT Road / Old GT Road,Near Welcome Metro Station towards Shyam Lal College both carriageway / near Shyam Lal College,01.08.2021,1
+41,GT Road / Old GT Road,Shahdara Mandi,01.08.2021,1
+42,GT Road / Old GT Road,Shastri Park to Shahdara carriageway,14.07.2021,1
+43,GTK Road,Azad Pur underpass,13.07.2021 14.07.2021 01.08.2021 11.09.2021,4
+44,GTK Road,Jahangirpuri both carriageway,14.07.2021,1
+45,GTK Road,Libaspur Underpass,11.09.2021,1
+46,GTK Road,Near GTK DTC Depot,03.09.2021 11.09.2021,2
+47,GTK Road,Near Jahangir Puri Metro Station,11.09.2021,1
+48,GTK Road,Shakti Nagar underpass,01.08.2021,1
+49,Hardev Sahai Road,Near Kashmere Gate Metro Station,01.08.2021 11.09.2021,2
+50,Inder Chandra Shastri Marg,Shakti Nagar Chowk,14.07.2021,1
+51,Kanjhawala – Bawana Road,Near Kanjhawala Chowk,13.09.2021,1
+52,Kanjhawala Road,Cygnus Hospital to Karala Chowk,19.07.2021,1
+53,Kautilaya Marg,R/A Samrat Hotel Chanakya Puri,19.05.2021 01.09.2021,2
+54,Kemal Attaturk Marg,Near Bhinder Point,11.09.2021,1
+55,Khadak Singh Marg,Near GPO,31.08.2021,1
+56,Khera Road,Near Khera Village Redlight,11.09.2021,1
+57,Krishna Manan Marg,A-Block,31.08.2021,1
+58,Lala Lajpat Rai Marg,Near Central School Greater Kailash,29.07.2021,1
+59,Lala Lajpat Rai Marg,Near Lodhi Flyover both side,13.07.2021,1
+60,Lala Lajpat Rai Marg,Near Moolchand Bus Stand,11.09.2021,1
+61,Lala Lajpat Rai Marg,Near Moolchand Hospital,31.08.2021,1
+62,Lampur – Narela Road,Lampur Underpass,11.09.2021,1
+63,Lodhi Road,Near Bhishm Pitamah crossing,31.08.2021,1
+64,M.B. Road (Mehrauli – Badarpur Road),Asian Market Khanpur M.B. Road,19.07.2021 13.09.2021,2
+65,M.B. Road (Mehrauli – Badarpur Road),Khanpur T-Point to Hamdard T-Point both carriageway / Near RPS Colony Khanpur towards Badarpur Carriageway / Vayusenabad and Tigri on Khanpur to Badarpur carriageway,29.07.2021 30.07.2021 08.08.2021,3
+66,M.B. Road (Mehrauli – Badarpur Road),Near Batra Hospital,13.09.2021,1
+67,M.B. Road (Mehrauli – Badarpur Road),Near Saket Metro Station,31.08.2021,1
+68,M.B. Road (Mehrauli – Badarpur Road),Near Sangam Vihar Redlight both carriageway,11.09.2021,1
+69,M.B. Road (Mehrauli – Badarpur Road),Pul Prahladpur Underpass,13.07.2021 19.07.2021 30.07.2021 08.08.2021 21.08.2021 31.08.2021 11.09.2021,7
+70,M.B. Road (Mehrauli – Badarpur Road),Sainik Farm Gali No. 2 Cariappa Marg,13.07.2021,1
+71,M.G. Road (Mehrauli – Gurugram Road),Andheria Mor to M.G. Road,13.07.2021,1
+72,M.G. Road (Mehrauli – Gurugram Road),Near Jain Mandir Qutub Minar,01.09.2021,1
+73,Mahipalpur Road,Mahipalpur Underpass,11.09.2021,1
+74,Man Singh Road,Towards Akhar Road,31.08.2021,1
+75,Mathura Road,"Bhagwan Dass T-Point, Mathura Road",28.07.2021,1
+76,Mathura Road,Mohan Estate,27.07.2021 21.08.2021,2
+77,Mathura Road,Near Matka Peer & Bhagwan Dass Road,01.09.2021,1
+78,Mathura Road,Near ZOO,01.09.2021,1
+79,Mathura Road,Sarita Vihar Underpass,21.08.2021 11.09.2021,2
+80,Maulana Azad Road,Infront of Vigyan Bhawan,31.08.2021,1
+81,Minto Bridge Road,--,21.08.2021,1
+82,MM Road,Spinal Injury,21.08.2021,1
+83,Mother Teresa Crescent Marg,"Infront of Gate No. 31, R.P. Bhawan",02.09.2021,1
+84,Mother Teresa Crescent Road,Near 11 Murti,01.09.2021,1
+85,Mother Teresa Crescent Road,Near RML Hospital roundabout,11.09.2021,1
+86,Mother Teresa Crescent Road,Near RML U-Turn,01.09.2021,1
+87,Mother Teresa Crescent Road,Near roundabout Teen Murti,01.09.2021,1
+88,Mother Teresa Crescent Road,Redlight Sardar Patel Marg towards Ram Manohar Lohia Hospital,13.07.2021,1
+89,Moti Lal Nehru Marg,Q-Point Moti Lal Nehru Marg,31.08.2021,1
+90,Mubarakpur Road,Nangloi Railway Phatak to Mubarakpur village,19.07.2021,1
+91,Najafgarh – Bahadurgarh Road,From Firni Road Najafgarh upto PTS Jharoda Kalan,19.07.2021,1
+92,Najafgarh – Bijwasan Road,Near CISF Camp,11.09.2021,1
+93,Najafgarh – Bijwasan Road,Near Golak Dham Bijwasan,01.09.2021,1
+94,Najafgarh – Bijwasan Road,Near Indian Oil Corporation,11.09.2021,1
+95,Najafgarh – Bijwasan Road,Under Bijwasan Flyover,13.07.2021,1
+96,Najafgarh Firni Road,Firni Road,19.07.2021,1
+97,Najafgarh Road,Near Moti Nagar Chowk,11.09.2021,1
+98,Najafgarh Road,Near Vishal Chowk,01.09.2021,1
+99,Najafgarh Road,Ramesh Nagar towards Raja Garden both carriageway,01.09.2021,1
+100,Najafgarh Road,Zakhira underpass,14.07.2021 01.08.2021 31.08.2021 01.09.2021 11.09.2021,5
+101,Nangloi – Najafgarh Road,Baprola Village bus stand,01.08.2021,1
+102,Nangloi – Najafgarh Road,Near Water Tank,19.07.2021 01.08.2021 21.08.2021 31.08.2021 11.09.2021,5
+103,NH-1,Near Singhu Village,28.07.2021,1
+104,NH-24,Ghazipur,21.08.2021,1
+105,NH-8,GGR – PDR,13.07.2021 19.07.2021 11.09.2021,3
+106,NH-9 (NH-24),Near Mother Diary underpass,01.08.2021,1
+107,Nithari Road,Kirari Village to Naveen public school,19.07.2021,1
+108,Nitya Nand Marg,Near Gate No. 3 Kashmere Gate metro station,14.07.2021,1
+109,Old Rohtak Road,Anand Parbat Gali No. 10,31.08.2021,1
+110,Outer Ring Road,Adhchini towards Kishangarh,01.09.2021,1
+111,Outer Ring Road,Madhuban Chowk,30.07.2021,1
+112,Outer Ring Road,Near Munirka Village towards RTR,11.09.2021,1
+113,Outer Ring Road,Near Redlight B-block Mangolpuri,14.07.2021,1
+114,Outer Ring Road,Near Savitri Flyover both side,31.08.2021 01.09.2021,1
+115,Outer Ring Road,Under RTR Flyover and near Munirka Redlight,13.07.2021 01.08.2021 21.08.2021,3
+116,Pankha Road,"Descending point of the loop of Dabri flyover coming from Uttam Nagar side, near Janak Cinema",13.07.2021,1
+117,Patel Road,Near Shadipur Flyover,01.09.2021,1
+118,Patel Road,Patel Nagar Road both carriageway,01.09.2021,1
+119,Pusa Road,Roundabout Bagga Link near Hanuman Murti Karol Bagh,19.05.2021,1
+120,Rafi Marg,Entire Rafi Marg,27.07.2021,1
+121,Rafi Marg,Near Rail Bhawan Bus Stand & Boat Club,01.09.2021,1
+122,Rafi Marg,Sunheri Bagh towards Rail Bhawan,31.08.2021,1
+123,Raisina Road,Both carriageway,02.09.2021,1
+124,Raisina Road,Opposite Youth Congress Office,02.09.2021,1
+125,Raisina Road,Roundabout Rail Bhawan,19.07.2021,1
+126,Rajpath Road,Near India Gate,11.09.2021,1
+127,Ram Nath Vij Marg,Near Tower,11.09.2021,1
+128,Rani Jhansi Road,Near Burfkhana Chowk,01.09.2021 11.09.2021,2
+129,Ring Road,CNG pump R.K. Puram,27.07.2021,1
+130,Ring Road,IP flyover towards Sarai Kale Khan / near Petrol Pump on the carriageway towards Ashram,09.07.2021 19.07.2021,2
+131,Ring Road,Mayapuri Flyover,08.08.2021,1
+132,Ring Road,Mayapuri Metro Station,21.08.2021 11.09.2021,2
+133,Ring Road,Moolchand Underpass,31.08.2021 11.09.2021,2
+134,Ring Road,Near AIIMS,31.08.2021,1
+135,Ring Road,Near Hanuman Mandir / Setu,14.07.2021 01.08.2021 21.08.2021 02.09.2021 11.09.2021,5
+136,Ring Road,Near Hyatt Hotel,13.07.2021 21.08.2021,2
+137,Ring Road,near Kela Ghat,14.07.2021,1
+138,Ring Road,Near Lajpat Nagar Flyover,01.09.2021,1
+139,Ring Road,Near Mayapuri Chowk,01.09.2021,1
+140,Ring Road,Near Nizamuddin Khatta,31.08.2021,1
+141,Ring Road,Near P.S. Civil Lines,30.07.2021,1
+142,Ring Road,Near Rajdhani College to ESI Hospital,01.09.2021,1
+143,Ring Road,Near Redlight towards Bhairon Mandir,11.09.2021,1
+144,Ring Road,Near WHO Building,21.08.2021 11.09.2021,2
+145,Ring Road,"Sector-13, R.K. Puram near Satya Niketan",13.07.2021,1
+146,Ring Road,Towards Khybar Pass road,30.07.2021 01.08.2021,2
+147,Ring Road,Towards Timarpur,14.07.2021,1
+148,Ring Road,Under Britannia Flyover,11.09.2021,1
+149,Ring Road,Under Dhaula Kuan flyover towards Naraina,19.05.2021,1
+150,Ring Road,Under Kodia Pul,02.09.2021,1
+151,"Road No. 201, Dwarka",Near Rajapuri Bus stand,13.07.2021,1
+152,"Road No. 226, Dwarka",Sector-20 near Marble Market,11.09.2021,1
+153,Road No. 57,Bihari Colony Railway underpass,01.08.2021 11.09.2021,2
+154,Rohtak Road,Anand Parbat Redlight,08.08.2021 03.09.2021,2
+155,Rohtak Road,"Metro Pillar No. 505, Mundka",27.07.2021,1
+156,Rohtak Road,Nangloi towards Mundka carriageway,01.08.2021,1
+157,Rohtak Road,Near Mundka Metro Station,29.07.2021 21.08.2021,2
+158,Rohtak Road,Near Mundka Village,11.09.2021,1
+159,Rohtak Road,Near Nangloi Metro Station,01.09.2021,1
+160,Rohtak Road,Near Peeragarhi Chowk,13.07.2021,1
+161,Rohtak Road,Near pillar no 450 Mundka,14.07.2021,1
+162,Rohtak Road,Near Rajdhani Park Metro Station both carriageways,19.05.2021 13.07.2021 19.07.2021 28.07.2021 08.08.2021 31.08.2021 11.09.2021,7
+163,Rohtak Road,Tikri Border,19.07.2021 01.08.2021,2
+164,Rohtak Road,Zakhira Railway Track,31.08.2021,1
+165,Rohtak Road,Zakhira towards Anand Parbat,28.07.2021,1
+166,Sansad Marg,Near roundabout Patel Chowk,01.09.2021,1
+167,Sardar Patel Marg,Dhaula Kuan Flyover both carriageway,11.09.2021,1
+168,Sardar Patel Marg,Near 11 Murti towards RML Hospital,31.08.2021,1
+169,Satguru Ram Singh Marg,Lajwanti Chowk,01.09.2021,1
+170,Shahjahan Road,--,31.08.2021,1
+171,Shankar Road,Near Roundabout Pusa,31.08.2021,1
+172,Sher Shah Road,Near Mathura Road Redlight,27.07.2021,1
+173,Shyama Prasad Mukherjee Marg,Exit gate of Old Delhi Railway Station,02.09.2021,1
+174,Shyama Prasad Mukherjee Marg,Near Chhata Rail,14.07.2021 21.08.2021 31.08.2021,3
+175,South Avenue Road,Both side South Avenue Road,01.09.2021,1
+176,SSN Marg,Near DLF,02.09.2021 11.09.2021,2
+177,SSN Marg,Near Nanda Hospital,02.09.2021,1
+178,SSN Marg,Near Qutub Minar Metro Station,08.08.2021 21.08.2021 01.09.2021 02.09.2021 11.09.2021 13.09.2021,6
+179,Sunheri Bagh Road,Sunheri Maszid,27.07.2021,1
+180,Tamil Sangam Marg,Nera Amar Shahid Genu T-Point,13.07.2021,1
+181,Thimayya Marg,Near Redlight Thimayya Marg towards Airport,11.09.2021,1
+182,Tilak Marg,A-Point,02.09.2021,1
+183,Tilak Marg,C-Hexagon Tilak Marg,29.07.2021,1
+184,Tilak Marg,Under Tilak Bridge,11.09.2021,1
+185,Tilak Marg,W-Point,13.07.2021,1
+186,Tyag Raj Marg,--,31.08.2021,1
+187,Vandemataram Marg,Near roundabout Bagga Link,08.08.2021,1
+188,Vandemataram Marg,Roundabout Shankar Road,08.08.2021,1
+189,Veer Banda Bairagi Marg,Azad Market underpass,14.07.2021 08.08.2021 21.08.2021 01.09.2021 11.09.2021,5
+190,Vikas Marg,Infront of WHO Building,29.07.2021 01.08.2021,2
+191,Wazirabad Road,Bhajanpura main market towards Wazirabad,28.07.2021,1
+192,Wazirabad Road,Main Market Khajuri,21.08.2021,1
+193,Wazirabad Road,Near Bhajanpura Bus Stand,29.07.2021,1
+194,Wazirabad Road,near Bhajanpura Mazar,14.07.2021 19.07.2021 28.07.2021,3
+195,Wazirabad Road,Near Khajuri towards Brijpuri,11.09.2021,1
+196,Wazirabad Road,Yamuna Vihar towards Khajuri Khas both carriageway,01.08.2021,1
+197,DAVP Marg,CISF Cut,21.08.2021,1
+198,Lala Lajpat Rai Marg,Jangpura Metro Station,21.08.2021,1
+199,Lala Lajpat Rai Marg,Lajpat Nagar Metro Station,21.08.2021,1
+200,Palam Road,Mehram Nagar Underpass,21.08.2021,1
+201,--,Rajokari Underpass,21.08.2021,1
+202,NH-48 Gurugram Road,Sanjay T-Point,21.08.2021,1
+203,--,Babar Chowk,21.08.2021,1
+204,--,Bakkarwala,21.08.2021,1
+205,J.B. Tito Marg,Central School Andrewz Ganj,21.08.2021,1
+206,GT Road,Chintamani Flyover,21.08.2021,1
+207,"Jhilmil Industrial Area, Railway Road",Kasturba Nagar Underpass,21.08.2021,1
+208,--,Monkey Bridge Saleemgarh,21.08.2021,1
+209,--,Okhla Mandi,21.08.2021,1
+210,--,Rithala Metro Station,21.08.2021,1
+211,SSN Marg,Y-Point Chattarpur,21.08.2021,1
