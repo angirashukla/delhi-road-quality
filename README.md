@@ -1,99 +1,70 @@
-# Delhi Road Quality — a multi-source open dataset
+# Delhi Roads — mapping reported road problems
 
-**[▶ Open the interactive map](https://angirashukla.github.io/delhi-road-quality/viewer.html)** — crashes, waterlogging, detected surface damage, and data coverage on Delhi's arterial network.
+**[▶ Open the map](https://angirashukla.github.io/delhi-road-quality/viewer.html)**
 
-A segment-level dataset triangulating **three independent public sources** of road
-quality for ~985 km of Delhi's arterial roads (motorway / trunk / primary), cut into
-2,701 ~1 km segments. No composite index: each source is reported in its own
-column, with per-segment source counts, so users can weight (or distrust) sources
-themselves.
+A personal, exploratory project mapping what public reports say about the condition
+of Delhi's arterial roads. It combines three things that rarely sit on the same map:
+police crash-prone zones, waterlogging locations, and road-surface damage detected
+in street imagery — snapped to a common grid of 2,701 ~1 km road segments.
 
-| Source | What it measures | Vintage | Segments covered |
+**What this is not.** It is not a measure of Delhi's road quality. Every layer is
+*reported or detected* cases only, and coverage is thin: crash zones exist only
+where police counts crossed a publication threshold, the waterlogging list is from
+2021, and only 21% of segments have recent street imagery. A blank segment means
+*no data*, not a good road. Treat this as a starting point for looking, not a
+conclusion.
+
+| Layer | Source | Vintage | Segments with data |
 |---|---|---|---|
-| **Crash-prone zones** (Delhi Traffic Police, Road Crash Report 2023, Table 6.29) | 107 zones with simple/fatal crash counts, road-attributed | 2023 | 80 |
-| **Waterlogging locations** (Delhi Traffic Police) | 211 locations with event dates + frequency | 2021 | 136 |
-| **CV surface damage** (Mapillary street imagery × RDD2022 YOLOv8 detector) | cracks/potholes per frame, recent imagery only | 2024–26 | 561 (21%) |
+| Crash-prone zones | Delhi Traffic Police, Road Crash Report 2023 (Table 6.29, all 107 zones; transcription sums match published totals) | 2023 | 80 |
+| Waterlogging | Delhi Traffic Police waterlogging list (211 locations, event frequency) | 2021 | 136 |
+| Surface damage | Mapillary street imagery × an RDD2022-trained YOLOv8 detector (unvalidated for Delhi — noisy lower bound) | 2024–26 | 561 |
 
-Cross-source agreement (road level, 64 named roads ≥3 km): crashes/km ×
-waterlogging/km ρ≈0.29; crashes/km × CV damage ρ≈0.29. Segment-level correlations
-are attenuated by geocoding noise and small overlaps — see `AGREEMENT.md`.
+Where the layers can be compared (64 named roads ≥3 km), crashes/km and
+waterlogging/km rank-correlate at ρ≈0.29, as do crashes/km and detected damage —
+suggestive, not conclusive. Details in `AGREEMENT.md`.
 
 ## Files
 
 ```
-data/
-  segments.csv               ← the dataset: one row per ~1 km segment, per-source columns
-  roads.csv                  road-level rollup (canonical names; Ring Road fragments merged)
-  segments_backbone.geojson  segment geometries
-  arterials.geojson          raw OSM arterial ways
-  crash_zones_2023.csv       all 107 crash-prone zones (transcribed; sums verified
-                             against published totals: 697 simple / 366 fatal / 1,063)
-  waterlogging_2021.csv      211 scraped waterlogging locations
-  source_*_segments.csv      per-source segment aggregates
-  cv_coverage.csv            recent-imagery coverage per segment (NA ≠ 0)
-src/                         full pipeline (see Reproduce)
-viewer.html                  self-contained interactive map (also served via the link above)
-AGREEMENT.md                 cross-source agreement analysis
-source-audit.md              source feasibility audit (incl. sources that failed)
+data/segments.csv              one row per ~1 km segment, one column per layer
+data/roads.csv                 road-level rollup (Ring Road name fragments merged)
+data/segments_backbone.geojson segment geometries
+data/crash_zones_2023.csv      the 107 zones as published
+data/waterlogging_2021.csv     the 211 locations as published
+data/source_*_segments.csv     per-layer segment aggregates
+data/cv_coverage.csv           which segments have recent imagery (NA ≠ 0)
+src/                           pipeline (backbone → scrape → geocode/snap → imagery → detect → fuse → viewer)
+viewer.html                    the map (self-contained; same file the link serves)
+source-audit.md                what was tried, incl. sources that didn't work out
+AGREEMENT.md                   how the layers relate
 ```
 
-**Conventions.** Missing source at a segment = empty cell (unobserved), never 0.
-CV: a segment *with* recent imagery and no detections is `0.0` (observed clean); a
-segment with no recent imagery is empty (unobserved). `n_sources` counts sources
-observing each segment.
+Conventions: empty cell = unobserved, never 0. A segment with imagery and no
+detections is 0.0 (observed clean); a segment with no imagery is empty.
 
-## Pipeline
+## Caveats, in order of importance
 
-1. `backbone.py` — OSM Overpass → Delhi arterials → 1 km segments with stable IDs
-2. `scrape_waterlogging.py` — Delhi Traffic Police waterlogging table → CSV
-3. `geocode_snap.py` — Photon/Nominatim geocoding (cleaned query variants) → snap
-   to nearest segment (≤1.5 km)
-4. `collect.py` — Mapillary imagery manifest along the backbone (2024+, sequence-
-   deduped at 50 m, capped 8 frames/segment)
-5. `detect.py` — RDD2022-trained YOLOv8 on road ROI (lower 60%, 1280 px inference)
-6. `fuse.py` — join everything, road-name alias consolidation (Ring Road = Mahatma
-   Gandhi Marg/Road — spatially verified; Outer Ring Road = Dr KB Hedgewar Marg),
-   agreement analysis
-7. `make_viewer2.py` — regenerate `viewer.html` from the data
-
-## Known limitations (read before using)
-
-- **CV detector is unvalidated for Delhi.** Raw RDD2022 transfer, no India
-  fine-tune, no ground-truth comparison; recall is unknown and likely low.
-  Treat `cv_*` columns as a noisy lower bound on visible damage.
-- **Crash zones are censored.** Only zones meeting the police threshold (≥3 fatal
-  within 500 m, or ≥10 total crashes) are published — segment crash columns are
-  "crashes at qualifying zones," not total crashes. Police data carries
-  reporting/enforcement bias.
-- **Geocoding is landmark-based.** 91/107 crash zones and 163/211 waterlogging
-  locations geocoded and snapped (misses listed in the audit); positions carry
-  snap error up to 1.5 km.
-- **Waterlogging list is 2021 vintage** (the last published structured table);
-  press reports 445 points for 2025 — an upgrade path, not yet in the data.
-- **Coverage varies by source** — see the coverage layer in the viewer. Absence of
-  data is not evidence of a good road.
-- Arterials only; dual carriageways appear as separate segments.
+1. **Reported cases only.** Police publish only zones above a threshold (≥3 fatal
+   in 500 m or ≥10 crashes); the waterlogging list is what officers logged in 2021.
+   Both carry reporting and enforcement bias.
+2. **The damage detector is unvalidated here** — no India fine-tune, no ground
+   truth; recall unknown and likely low.
+3. **Geocoding is landmark-based** (91/107 zones, 163/211 waterlogging points
+   placed; the rest listed in `data/geocode_misses.csv`), with up to ~1.5 km snap
+   error.
+4. **Arterials only**; dual carriageways are separate segments.
 
 ## Reproduce
 
-Python 3.12 venv with `requests shapely ultralytics pillow`. A free
-[Mapillary token](https://www.mapillary.com/developer) in `.mapillary_token` is
-needed for imagery collection (steps 4–5); everything else runs without keys.
-Run the pipeline in the numbered order above. GPU recommended for step 5
-(tested on an NVIDIA A40; a consumer GPU works).
+Python 3.12, `requests shapely ultralytics pillow`. A free Mapillary token in
+`.mapillary_token` for the imagery steps; everything else needs no keys. Run
+`src/` scripts in pipeline order. GPU helps for detection.
 
-## Licensing & attribution
+## Attribution
 
-- **Data** (`data/`, `viewer.html`): **CC BY-SA 4.0** — inherits share-alike from
-  Mapillary imagery (CC BY-SA) and the RDD2022 dataset (CC BY-SA 4.0).
-- **Code** (`src/`): MIT.
-- Crash and waterlogging figures derive from Delhi Traffic Police publications
-  (Road Crash Report 2023; delhitrafficpolice.gov.in). Road network © OpenStreetMap
-  contributors (ODbL). Detector weights from
-  [oracl4/RoadDamageDetection](https://github.com/oracl4/RoadDamageDetection).
-
-## Status
-
-Exploratory research dataset (v1, July 2026). Built as part of ongoing work on
-measuring Indian road quality from public data. Feedback and corrections welcome —
-open an issue.
+Data sources: Delhi Traffic Police publications; © OpenStreetMap contributors
+(ODbL); Mapillary imagery (CC BY-SA); RDD2022 detector weights via
+[oracl4/RoadDamageDetection](https://github.com/oracl4/RoadDamageDetection).
+Because the imagery-derived layer inherits share-alike terms, reuse of the data
+files should credit sources and stay share-alike (see `LICENSE`); code is MIT.
